@@ -51,9 +51,9 @@ public class Program {
         int result = 0;
         int rowSize = array.length;
         int columnSize = 0;
-        for (int i = 0; i < rowSize; i++) {
-            if (columnSize < array[i].length){
-                columnSize = array[i].length;
+        for (String[] row : array) {
+            if (columnSize < row.length) {
+                columnSize = row.length;
             }
         }
         if (rowSize > 4 || columnSize > 4) {
